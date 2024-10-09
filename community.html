@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="community.css">
+    <link rel="icon" href="STEM_SOC_WITH_BG_JOIN.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <title>UC STEM SOC</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav> 
+            <ul class="left-nav">
+                <li class="first_child"><img src="UC_LOGO.png" alt=""></li>
+                <li class="second_child"><img src="integrated_school.png" alt=""></li>
+                <li class="third_child"><img src="STEM_SOC_FINAL_logo.png" alt=""></li>
+                <li class="fourth_child"><h2>University of the Cordilleras
+                    <br> STEM Society
+                </h2></li>
+            </ul>
+            <ul class="right-nav" id="right_nav_id">
+                <li class="rLinks"><a href="Home_Beta.html">Home</a></li>
+                <li class="rLinks"><a href="#">Achievemnts</a></li>
+                <li class="rLinks"><a href="archives.html">Archives</a></li>
+                <li class="rLinks"><a href="community.html">Community</a></li>
+                <li class="rLinks"><a href="#">Quizzes</a></li>
+                <li class="menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" onclick="showMenu()"/></svg></a></li>
+            </ul>
+        
+            
+        </nav>
+
+        <div class="sidebar">
+        <ul class="side_bar right-nav">
+            <li><a href="#">Quizzes</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Archives</a></li>
+            <li><a href="#">Achievemnts</a></li>
+            <li><a href="Home_Beta.html">Home</a></li>
+            <li onclick="hideSidebar()">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg></a>
+            </li>
+        </div>
+        </ul>
+
+        <!-- Java Script Code  -->
+        <script>
+        function showSidebar() {
+            const side_bar = document.querySelector('.side_bar');
+            side_bar.classList.add('show');
+        }
+        
+        function hideSidebar() {
+            const side_bar = document.querySelector('.side_bar');
+            side_bar.classList.remove('show');
+        }
+         </script>
+        <!-- END OF NAVIGATION BAR -->
+
+        <div class="HOME_ROW">
+            <div class="HOME_COL">
+            <h1 class="HOME_ROW_TITLE">
+                STEM SOC COMMUNITY
+            </h1>
+         
+            <p class="HOME_ROW_PARAGRAPH">
+                The Community feature offers previews of upcoming STEM Society events. It also highlights 
+                activities from other organizations at the University of the Cordilleras. This ensures students 
+                stay informed about the latest events and opportunities within the university community. 
+                Engaging with these events fosters a collaborative and enriching academic experience.
+            </p>
+
+            <a href="https://www.facebook.com/profile.php?id=100086652038016&mibextid=LQQJ4d">Visit us in our Facebook page.</a>
+        </div>
+
+        <div class="HOME_COL">
+            <div class="image_HOME"> <!-- SLIDER -->
+            <div class="slides">
+                <img class="slide" src="STUDENT_DAY_5.jpg" alt="error">
+                <img class="slide" src="MR_&_MS_STEM_(7).jpg" alt="#">
+                <img class="slide" src="CLOSSING_(1).jpg" alt="#">
+                <button class="prev hButtons" onclick="prevSlide()">&#10094;</button>
+                <button class="next hButtons" onclick="nextSlide()">&#10095;</button>
+            </div>
+            </div>
+         </div>
+
+        <script src="Home_Beta.js"></script>
+    </section>
+
+    <!-- SECTION 2 -->
+      <!-- STEM SECTION -->
+    <section class="STEM">
+        <div class="STEM_CONTAINER">
+            <div class="STEM_CONTAINER_PARENT View">
+                <div class="STEM_CHILDREN_ROW  block">
+                    <h2>
+                         Check our community organization.
+                    </h2>
+                    <p class="STEM_TEXT">
+                        STEM is an interdisciplinary approach in the 
+                        Philippine education system that stands for: 
+                    </p>
+                </div>
+
+
+                <div class="STEM_CHILDREN_ROW">
+                    <div class="card">
+                        <h3>STEM SOC</h3>
+                        <div class="card_body">
+                            <h4 class="card_title">STEM SOCIETY</h4>
+                            <p id="card_info">
+                                The STEM Society is a organization dedicated to supporting STEM students by addressing their 
+                                concerns, and hosting events for STEM students. 
+                            </p>
+                                
+                        </div>
+                    </div>
+
+                    <div class="tech_card">
+                        <h3>NJG</h3>
+                        <div class="card_body_tech">
+                            <h4 class="card_title">Numerical Jaguar Guild</h4>
+                            <p id="card_info">
+                                The Numerical Jaguar Guild is a club that explores the fascinating world of mathematics  
+                                through engaging activities and collaborative learning.
+                            </p>
+                          
+                        </div>
+                    </div>
+
+                    <div class="engi_card">
+                        <h3>RYC</h3>
+                        <div class="card_body_engi">
+                            <h4 class="card_title">Red Cross Youth Council</h4>
+                            <p id="card_info">
+                                The Red Cross Youth Council is an organization where people train on how to save one's life and be prepared for different disasters.
+                            </p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="math_card">
+                        <h3>AUG</h3>
+                        <div class="card_body_math">
+                            <h4 class="card_title">Artificial Universe Guild</h4>
+                            <p id="card_info">
+                                The Artificial Universe Guild is a club dedicated to exploring the realms of technology
+                                and physics.
+
+                            </p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section> 
+
+
+<!-- COMMUNITY -->
+     <section class="COMMUNITY_EVENT">
+        <div class="EVENT">
+            <h1>STEM SOCIETY EVENTS</h1>
+        </div>
+        
+        <div class="COMMUNITY_STEM_CONTAINER">
+            <div class="COMMUNITY_ROW_EVENT_PARENT">
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <img src="ASSEMBLY_(4).jpg" alt="error">
+                </div>
+
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <h2>#STEM OPENING ASSEMBLY </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Eum unde delectus veritatis dolorem id! 
+                        Incidunt voluptate quia, eveniet debitis id
+                         nesciunt ullam eos animi consequatur. 
+                        Neque ut incidunt dolore optio.</p>
+                    <div class="LINKS_CHILDREN">
+                        <a class="FACEBOOK" href="https://www.facebook.com/share/p/57uhbNLdwNUYLUpV/">Facebook</a>
+                        <a class="STEMSOC" href="#">#STEMSOC</a>
+                        <a class="EVENT_CATEGORY" href="#">#OPENING ASSEMBLY</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="COMMUNITY_ROW_EVENT_PARENT">
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <img src="Katangkays_(3).jpg" alt="error">
+                </div>
+
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <h2>#KATANGKAYS TUTORIAL </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Eum unde delectus veritatis dolorem id! 
+                        Incidunt voluptate quia, eveniet debitis id
+                         nesciunt ullam eos animi consequatur. 
+                        Neque ut incidunt dolore optio.</p>
+                    <div class="LINKS_CHILDREN">
+                        <a class="FACEBOOK" href="https://www.facebook.com/share/p/57uhbNLdwNUYLUpV/">Facebook</a>
+                        <a class="STEMSOC" href="#">#STEMSOC</a>
+                        <a class="EVENT_CATEGORY" href="#">#OPENING ASSEMBLY</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="COMMUNITY_ROW_EVENT_PARENT">
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <img src="Red_Cross (3).JPG" alt="error">
+                </div>
+
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <h2>#RED CROSS TRAINING </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Eum unde delectus veritatis dolorem id! 
+                        Incidunt voluptate quia, eveniet debitis id
+                         nesciunt ullam eos animi consequatur. 
+                        Neque ut incidunt dolore optio.</p>
+                    <div class="LINKS_CHILDREN">
+                        <a class="FACEBOOK" href="https://www.facebook.com/share/p/57uhbNLdwNUYLUpV/">Facebook</a>
+                        <a class="STEMSOC" href="#">#STEMSOC</a>
+                        <a class="EVENT_CATEGORY" href="#">#OPENING ASSEMBLY</a>
+                    </div>
+                </div>
+            </div>
+
+                
+            <div class="COMMUNITY_ROW_EVENT_PARENT">
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <img src="Rendezvous_(2).jpg" alt="error">
+                </div>
+
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <h2>#DECEMBER RENDEVOUZ </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Eum unde delectus veritatis dolorem id! 
+                        Incidunt voluptate quia, eveniet debitis id
+                         nesciunt ullam eos animi consequatur. 
+                        Neque ut incidunt dolore optio.</p>
+                    <div class="LINKS_CHILDREN">
+                        <a class="FACEBOOK" href="https://www.facebook.com/share/p/57uhbNLdwNUYLUpV/">Facebook</a>
+                        <a class="STEMSOC" href="#">#STEMSOC</a>
+                        <a class="EVENT_CATEGORY" href="#">#OPENING ASSEMBLY</a>
+                    </div>
+                </div>
+            </div>
+
+                
+            <div class="COMMUNITY_ROW_EVENT_PARENT">
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <img src="SCI_math.JPG" alt="error">
+                </div>
+
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <h2>#STEM SCIENCE QUIZ BEE </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Eum unde delectus veritatis dolorem id! 
+                        Incidunt voluptate quia, eveniet debitis id
+                         nesciunt ullam eos animi consequatur. 
+                        Neque ut incidunt dolore optio.</p>
+                    <div class="LINKS_CHILDREN">
+                        <a class="FACEBOOK" href="https://www.facebook.com/share/p/57uhbNLdwNUYLUpV/">Facebook</a>
+                        <a class="STEMSOC" href="#">#STEMSOC</a>
+                        <a class="EVENT_CATEGORY" href="#">#OPENING ASSEMBLY</a>
+                    </div>
+                </div>
+            </div>
+
+                
+            <div class="COMMUNITY_ROW_EVENT_PARENT">
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <img src="MR_&_MS_STEM_(7).jpg" alt="error">
+                </div>
+
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <h2>#MR AND MS EARTH STEM </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Eum unde delectus veritatis dolorem id! 
+                        Incidunt voluptate quia, eveniet debitis id
+                         nesciunt ullam eos animi consequatur. 
+                        Neque ut incidunt dolore optio.</p>
+                    <div class="LINKS_CHILDREN">
+                        <a class="FACEBOOK" href="https://www.facebook.com/share/p/57uhbNLdwNUYLUpV/">Facebook</a>
+                        <a class="STEMSOC" href="#">#STEMSOC</a>
+                        <a class="EVENT_CATEGORY" href="#">#OPENING ASSEMBLY</a>
+                    </div>
+                </div>
+            </div>
+
+                
+            <div class="COMMUNITY_ROW_EVENT_PARENT">
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <img src="STUDENT_DAY_5.jpg" alt="error">
+                </div>
+
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <h2>#STUDENT DAY </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Eum unde delectus veritatis dolorem id! 
+                        Incidunt voluptate quia, eveniet debitis id
+                         nesciunt ullam eos animi consequatur. 
+                        Neque ut incidunt dolore optio.</p>
+                    <div class="LINKS_CHILDREN">
+                        <a class="FACEBOOK" href="https://www.facebook.com/share/p/57uhbNLdwNUYLUpV/">Facebook</a>
+                        <a class="STEMSOC" href="#">#STEMSOC</a>
+                        <a class="EVENT_CATEGORY" href="#">#OPENING ASSEMBLY</a>
+                    </div>
+                </div>
+            </div>
+
+                
+            <div class="COMMUNITY_ROW_EVENT_PARENT">
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <img src="CLOSSING_(1).jpg" alt="error">
+                </div>
+
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <h2>#STEM SOCIETY CLOSING ASSEMBLY </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Eum unde delectus veritatis dolorem id! 
+                        Incidunt voluptate quia, eveniet debitis id
+                         nesciunt ullam eos animi consequatur. 
+                        Neque ut incidunt dolore optio.</p>
+                    <div class="LINKS_CHILDREN">
+                        <a class="FACEBOOK" href="https://www.facebook.com/share/p/57uhbNLdwNUYLUpV/">Facebook</a>
+                        <a class="STEMSOC" href="#">#STEMSOC</a>
+                        <a class="EVENT_CATEGORY" href="#">#OPENING ASSEMBLY</a>
+                    </div>
+                </div>
+            </div>
+
+                 
+            <div class="COMMUNITY_ROW_EVENT_PARENT">
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <img src="GALA_(1).JPG" alt="error">
+                </div>
+
+                <div class="COMMUNITY_ROW_EVENT_CHILDREN">
+                    <h2>#STEM NIGHT </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Eum unde delectus veritatis dolorem id! 
+                        Incidunt voluptate quia, eveniet debitis id
+                         nesciunt ullam eos animi consequatur. 
+                        Neque ut incidunt dolore optio.</p>
+                    <div class="LINKS_CHILDREN">
+                        <a class="FACEBOOK" href="https://www.facebook.com/share/p/57uhbNLdwNUYLUpV/">Facebook</a>
+                        <a class="STEMSOC" href="#">#STEMSOC</a>
+                        <a class="EVENT_CATEGORY" href="#">#OPENING ASSEMBLY</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section> 
+
+    <section class="footer"></section>
+</body>
